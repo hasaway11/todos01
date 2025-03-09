@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  width:1200px;
+  margin: 0 auto;
+}
+
+header, nav, footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+header {
+  border: 1px solid #d89a1d; 
+	letter-spacing: 0.75em; 
+  font-weight: bold;
+}
+
+nav, footer {
+  border: 1px solid darkcyan;
+}
+
+main {
+  overflow: hidden;
+}
+
+main>* {
+  float: left;
+}
+
+aside {
+  height: 200px;
+  line-height: 200px;
+  width: 100px;
+  background-color: lightgray;
+  text-align: center;
+}
+
+section {
+  min-height: 600px;
+  width: 1000px;
+  padding: 5px;
+}
+
+.inline-block {
+  display: inline-block;
+}
