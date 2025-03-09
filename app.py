@@ -1,5 +1,6 @@
 from flask import Flask,session, redirect
 from todo_view import todos_app
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '1234'
@@ -29,4 +30,6 @@ def set_login_logout():
 with app.test_request_context():
   print(app.url_map)
 
-app.run(debug=True)
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
